@@ -55,8 +55,17 @@ public class MainCommand implements CommandExecutor {
                 }
             }
         }
-
+        if (args.length == 1 && args[0].equalsIgnoreCase("help")) {
+            help(sender);
+        }
         return false;
+    }
+
+    private void help(CommandSender sender) {
+        sender.sendMessage("BetterSpawn");
+        sender.sendMessage("/bts addPoint <spawnName> 添加一个点");
+        sender.sendMessage("/bts delPoint <spawnName> 删除一个点");
+        sender.sendMessage("/bts reload 重载");
     }
 
     private void reload() {
