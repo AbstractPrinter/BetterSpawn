@@ -1,0 +1,13 @@
+name: BetterSpawn
+version: ${project.version}
+main: cn.wangyudi.betterspawn.BetterSpawn
+api-version: 1.13
+prefix: BetterSpawn
+authors: [ AbstractPrinter ]
+softdepend: [PlaceholderAPI]
+commands:
+  betterspawn:
+    description: BetterSpawn Command
+    useage: Type /betterspawn
+    aliases:
+      - bts

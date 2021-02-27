@@ -1,0 +1,22 @@
+# 例子
+# example —— 世界名
+# mode —— 重生模式
+# random —— 模式为 random 时需要配置的内容
+  # safe —— 是否出生在安全的点
+  # needs —— 随机重生的条件
+  # commands —— 重生后执行的指令
+example:
+  mode: 'random'
+  random:
+    safe: true
+    needs:
+      - 'money|100'
+      - 'item|minecraft:apple'
+    commands:
+      - 'console|stop'
+      - 'player|say fuck'
+      - 'op|gm 1'
+nearest_example:
+  mode: 'nearest'
+weight_example:
+  mode: 'weight'

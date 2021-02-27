@@ -1,0 +1,8 @@
+# https://bstats.org
+Bstats:
+  Enabled: true
+# Version
+Version:
+  Now: ${project.version}
+  # 该功能在多语言适配前暂不实现
+  CheckUpdate: false
