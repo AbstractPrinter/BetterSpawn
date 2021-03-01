@@ -4,7 +4,7 @@ main: cn.wangyudi.betterspawn.BetterSpawn
 api-version: 1.13
 prefix: BetterSpawn
 authors: [ AbstractPrinter ]
-softdepend: [PlaceholderAPI]
+softdepend: [ PlaceholderAPI,Residence ]
 commands:
   betterspawn:
     description: BetterSpawn Command

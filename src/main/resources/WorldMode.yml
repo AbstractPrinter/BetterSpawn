@@ -5,13 +5,12 @@
   # safe —— 是否出生在安全的点
   # needs —— 随机重生的条件
   # commands —— 重生后执行的指令
-example:
+# 只有Random模式需要添加"random:"
+world:
   mode: 'random'
   random:
-    safe: true
     needs:
       - 'money|100'
-      - 'item|minecraft:apple'
     commands:
       - 'console|stop'
       - 'player|say fuck'

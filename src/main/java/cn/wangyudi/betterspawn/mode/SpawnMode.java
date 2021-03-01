@@ -1,15 +1,16 @@
 package cn.wangyudi.betterspawn.mode;
 
+
 import org.bukkit.Location;
 
 /**
  * @author AbstractPrinter
  */
-public interface RespawnMode {
+public interface SpawnMode {
     /**
-     * 返回一个重生点
+     * 获取重生地点
      *
      * @return Location
      */
-    Location getRespawnLocation();
+    Location getSpawnLocation();
 }

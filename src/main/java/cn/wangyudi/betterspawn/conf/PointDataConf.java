@@ -11,7 +11,7 @@ import java.io.IOException;
  *
  * @author AbstractPrinter
  */
-public class PointDataConf {
+public class  PointDataConf {
     private static YamlConfiguration config;
     private static String configFile;
 

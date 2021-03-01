@@ -1,6 +1,21 @@
 # https://bstats.org
 Bstats:
   Enabled: true
+# RTP —— 如果你服务器没有世界是这个模式的，下列选项不会生效。
+# 采用预生成机制，性能远超 RTP 插件
+# RTP 算法复杂度
+Rtp:
+  # 每次更新一个点，这是更新间隔与秒的关系是1秒比20
+  UpdateInterval: 3600
+  # 每个随机重生模式的世界允许的最大点数
+  PointAmount: 10
+  # 保护半径(某处被选为重生点时产生的保护半径)
+  ProtectionRadius: 5
+  # 是否开启领地插件兼容
+  HasResidence: true
+# 本地化(待实现)
+Local:
+  Language: zh-CN
 # Version
 Version:
   Now: ${project.version}

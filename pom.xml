@@ -6,7 +6,7 @@
 
     <groupId>cn.wangyudi.betterspawn</groupId>
     <artifactId>BetterSpawn</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
     <packaging>jar</packaging>
 
     <name>BetterSpawn</name>
@@ -75,6 +75,13 @@
             <artifactId>placeholderapi</artifactId>
             <version>2.10.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.residence</groupId>
+            <artifactId>Residence</artifactId>
+            <version>4.9.2.7</version>
+            <systemPath>${project.basedir}/libs/Residence4.9.2.7.jar</systemPath>
+            <scope>system</scope>
         </dependency>
     </dependencies>
 </project>

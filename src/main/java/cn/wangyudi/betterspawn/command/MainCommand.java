@@ -3,7 +3,6 @@ package cn.wangyudi.betterspawn.command;
 import cn.wangyudi.betterspawn.conf.MainConf;
 import cn.wangyudi.betterspawn.conf.PointDataConf;
 import cn.wangyudi.betterspawn.conf.WorldModeConf;
-import cn.wangyudi.betterspawn.permission.BetterSpawnPermission;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -16,21 +15,20 @@ public class MainCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
-            if (sender.hasPermission(BetterSpawnPermission.RELOAD.getPermission())) {
+            if (sender.hasPermission("BetterSpawn.admin")) {
                 this.reload();
                 sender.sendMessage("RELOAD OK.");
             }
             return true;
         }
         if (args.length == 2 && args[0].equalsIgnoreCase("addPoint")) {
-            if (sender.hasPermission(BetterSpawnPermission.ADD_POINT.getPermission())) {
+            if (sender.hasPermission("BetterSpawn.admin")) {
                 if (sender instanceof Player) {
                     Player player = ((Player) sender).getPlayer();
                     String spawnName = args[1];
                     String[] needs = new String[]{""};
                     String[] commands = new String[]{""};
                     int weight = 0;
-                    PointDataConf.getConfig().set(spawnName + ".mode", "default");
                     PointDataConf.getConfig().set(spawnName + ".weight", weight);
                     PointDataConf.getConfig().set(spawnName + ".needs", needs);
                     PointDataConf.getConfig().set(spawnName + ".commands", commands);
@@ -44,7 +42,7 @@ public class MainCommand implements CommandExecutor {
             return true;
         }
         if (args.length == 2 && args[0].equalsIgnoreCase("delPoint")) {
-            if (sender.hasPermission(BetterSpawnPermission.DEL_POINT.getPermission())) {
+            if (sender.hasPermission("BetterSpawn.admin")) {
                 String spawnName = args[1];
                 if (PointDataConf.getConfig().get(spawnName) != null) {
                     PointDataConf.getConfig().set(spawnName, null);
