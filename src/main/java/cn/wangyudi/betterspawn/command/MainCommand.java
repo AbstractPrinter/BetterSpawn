@@ -29,6 +29,7 @@ public class MainCommand implements CommandExecutor {
                     String[] needs = new String[]{""};
                     String[] commands = new String[]{""};
                     int weight = 0;
+                    PointDataConf.getConfig().set(spawnName + ".enabled", true);
                     PointDataConf.getConfig().set(spawnName + ".weight", weight);
                     PointDataConf.getConfig().set(spawnName + ".needs", needs);
                     PointDataConf.getConfig().set(spawnName + ".commands", commands);
