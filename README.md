@@ -32,9 +32,9 @@
 * 添加可拓展的特效模块，对 NeverMindMythicPicture 进行适配
 
 # 指令
-/bts reload - 重载插件
-/bts addPoint <出生点名> - 添加出生点 注：添加后请前往配置文件修改，修改后重载插件
-/bts delPoint <出生点名> - 删除出生点
+* /bts reload - 重载插件
+* /bts addPoint <出生点名> - 添加出生点 注：添加后请前往配置文件修改，修改后重载插件
+* /bts delPoint <出生点名> - 删除出生点
 
 # 权限
 BetterSpawn.admin
